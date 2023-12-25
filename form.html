@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .required::after{
+            content: "*";
+            color: red;
+        }
+
+        body{
+            border: solid black;
+            width: fit-content;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            border-radius: 15px;
+           
+        }
+            h1{
+                /* font-style: italic; */
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action=""></form>
+
+    <label class="required">First Name</label>
+    <!-- <label for="fname">First Name:</label> -->
+    <input type="text" name="fname" required ><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" id="lname"><br><br>
+
+    <label for="email">Email ID:&nbsp;&nbsp;</label>
+    <input type="email" name="email" id="email"><br><br>
+
+    <label for="mob.no">Mob No.:&nbsp;&nbsp;</label>
+    <input type="number" name="number" maxlength="10" minlength="10" id="number"><br><br>
+
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password"><br><br>
+
+    <label for="DOB">DOB :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="date" name="Date" id="DOB"><br><br>
+
+
+    <label for="free text">About Yourself :  ..... <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <textarea name="My text" id="free text" cols="30" rows="10"
+        placeholder="Write Down here about your skills"></textarea><br><br>
+    <!-- <input type="my text" name="free text" id="free text" cols="90" rows="60"  > -->
+
+
+    <label for="Gender">Gender :</label>
+
+    <label for="Mail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail</label>
+    <input type="radio" name="Gender" id="Mail">
+    
+    <label for="Femail">Femail</label>
+    <input type="radio" name="Gender" id="Femail"> <br><br>
+
+    <label for="Marrietal Status">Marrietal Status :</label>
+
+    <label for="Married">Married</label>
+    
+    <input type="radio" name="Marrietal Status" id="Married">
+
+    <label for="Unmarried">Unmarried</label>
+    <input type="radio" name="Marrietal Status" id="Unmarried"> <br><br>
+
+    <label for="file">File Upload:&nbsp;&nbsp;</label>
+    <input type="file" name="File Upload" id="File"><br><br>
+
+    
+
+    <!-- <label for="Submit">submit</label> -->
+    <input type="reset">&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" id="Submit">
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
